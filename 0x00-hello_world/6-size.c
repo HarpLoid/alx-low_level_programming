@@ -1,7 +1,7 @@
 /* Program prints the size of various types on the computer it is compiled and run on*/
 #include <stdio.h>
 
-int main()
+int main(void)
 {
 	char c;
 	int i;

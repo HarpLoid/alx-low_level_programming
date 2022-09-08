@@ -1,7 +1,7 @@
 /* Prints "Programming is like building a multilingual puzzle exactly */
 #include <stdio.h>
 
-int main()
+int main(void)
 {
 	char mystr[] = "\"Programming is like building a multilingual puzzle";
 
