@@ -4,7 +4,7 @@
  * main - prints all possible combinations
  * of two digits.
  *
- * Returns: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
