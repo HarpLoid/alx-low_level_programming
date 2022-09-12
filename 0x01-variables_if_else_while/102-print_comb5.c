@@ -8,7 +8,10 @@
  */
 int main(void)
 {
-	int tens, units, t, u;
+	int tens;
+	int units;
+	int t;
+	int u;
 
 	for (tens = '0'; tens <= '9'; tens++)
 	{
