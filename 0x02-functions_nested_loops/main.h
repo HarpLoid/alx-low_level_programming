@@ -78,4 +78,12 @@ int print_last_digit(int);
  */
 void jack_bauer(void);
 
+/**
+ * add - adds two integer and displays the result
+ * @int: integer arguements to be added.
+ * 
+ * Return: value of addition.
+ */
+int add(int, int);
+
 #endif
