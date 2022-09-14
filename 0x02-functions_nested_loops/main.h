@@ -78,6 +78,15 @@ int print_last_digit(int);
  */
 void jack_bauer(void);
 
+
+/**
+ * times_table - print multiplication table
+ *
+ * Return: Always 0
+ */
+
+void times_table(void);
+
 /**
  * add - adds two integer and displays the result
  * @int: integer arguements to be added.
