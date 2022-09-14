@@ -66,11 +66,12 @@ int _abs(int);
 /**
  * print_last_digit - prints the last digit
  * a number
- * @int: an integer
+ * @long int: an integer
  *
  * Return: the value of the last digit
  */
-int print_last_digit(int);
+int print_last_digit(long int);
+
 
 /**
  * jack_bauer - prints every minute of the day
