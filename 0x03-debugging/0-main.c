@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * main - tests function that prints
- * if an unteger is positive or negative.
- *
+ * main - tests function that prints if an unteger is positive or negative.
  * Return: 0.
  */
 int main(void)
