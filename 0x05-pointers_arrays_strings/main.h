@@ -36,7 +36,7 @@ void swap_int(int *a, int *b);
 int _strlen(char *s);
 
 /**
- * _puts - prints a string followed by 
+ * _puts - prints a string followed by
  * a new line.
  * @str: String to print.
  *
@@ -45,7 +45,7 @@ int _strlen(char *s);
 void _puts(char *str);
 
 /**
- * print_rev - prints a string in 
+ * print_rev - prints a string in
  * reverse followed by a new line.
  * @s: String to print.
  *
@@ -54,7 +54,7 @@ void _puts(char *str);
 void print_rev(char *s);
 
 /**
- * rev_string - prints a string in 
+ * rev_string - prints a string in
  * reverse followed by a new line.
  * @s: String to print.
  *

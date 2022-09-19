@@ -12,7 +12,7 @@ void print_array(int *a, int n)
 {
 	/**
 	 * n is the length of the array
-	 * *a is a pointer to the array 
+	 * *a is a pointer to the array
 	 */
 	int idx = 0;
 
@@ -27,7 +27,7 @@ void print_array(int *a, int n)
 			printf("%d", *(a + idx));
 		}
 
-		idx ++;
+		idx++;
 	}
 	printf("\n");
 }
