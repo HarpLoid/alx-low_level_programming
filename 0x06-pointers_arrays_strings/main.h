@@ -80,5 +80,12 @@ void reverse_array(int *a, int n);
  */
 char *string_toupper(char *s);
 
+/**
+ * leet - encodes a string into numbers
+ * @s: string or array to change to encode
+ *
+ * Return: encoded string.
+ */
+char *leet(char *s);
 
 #endif /* _MAIN_H_ */
