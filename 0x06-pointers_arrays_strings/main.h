@@ -81,6 +81,14 @@ void reverse_array(int *a, int n);
 char *string_toupper(char *s);
 
 /**
+ * cap_string - capitalizes all words in string
+ * @s: string or array to change to capitalize
+ *
+ * Return: capitalized string.
+ */
+char *cap_string(char *s);
+
+/**
  * leet - encodes a string into numbers
  * @s: string or array to change to encode
  *
