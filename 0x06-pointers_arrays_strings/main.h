@@ -61,4 +61,24 @@ char *_strncpy(char *dest, char *src, int n);
  */
 int _strcmp(char *s1, char *s2);
 
+/**
+ * reverse_array - reverses the content
+ * of an array
+ * @a: array to reverse it's content.
+ * @n: number of elements in the array.
+ *
+ * Return: void.
+ */
+void reverse_array(int *a, int n);
+
+/**
+ * string_toupper - changes the characters
+ * in lowercase to uppercase
+ * @s: string or array to change to uppercase
+ *
+ * Return: uppercased string.
+ */
+char *string_toupper(char *s);
+
+
 #endif /* _MAIN_H_ */
