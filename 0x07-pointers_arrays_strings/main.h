@@ -59,4 +59,13 @@ char *_strchr(char *s, char c);
  */
 unsigned int _strspn(char *s, char *accept);
 
+/**
+ * _strpbrk - searchs a string for
+ * any of a set of bytes.
+ * @s: string to search.
+ * @accept: string of characters to check.
+ *
+ * Return: string from character.
+ */
+char *_strpbrk(char *s, char *accept);
 #endif /* _MAIN_H_ */
