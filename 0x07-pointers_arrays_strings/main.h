@@ -68,4 +68,15 @@ unsigned int _strspn(char *s, char *accept);
  * Return: string from character.
  */
 char *_strpbrk(char *s, char *accept);
+
+/**
+ * _strstr - locates a substring in
+ * another string.
+ * @haystack: string to search.
+ * @needle: string to check for.
+ *
+ * Return: string from character.
+ */
+char *_strstr(char *haystack, char *needle);
+
 #endif /* _MAIN_H_ */
