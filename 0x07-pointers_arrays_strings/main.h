@@ -79,4 +79,11 @@ char *_strpbrk(char *s, char *accept);
  */
 char *_strstr(char *haystack, char *needle);
 
+/**
+ * print_chessboard - prints the chessboard.
+ * @a: array to print.
+ *
+ * Return: void.
+ */
+void print_chessboard(char(*a)[8]);
 #endif /* _MAIN_H_ */
