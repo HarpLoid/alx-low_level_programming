@@ -39,4 +39,14 @@ char *_memset(char *s, char b, unsigned int n);
  */
 char *_memcpy(char *dest, char *src, unsigned int n);
 
+/**
+ * _strchr - finds a character in
+ * a string.
+ * @s: string to search.
+ * @c: character to locate.
+ *
+ * Return: string from character c.
+ */
+char *_strchr(char *s, char c);
+
 #endif /* _MAIN_H_ */
