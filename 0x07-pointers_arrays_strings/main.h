@@ -49,4 +49,14 @@ char *_memcpy(char *dest, char *src, unsigned int n);
  */
 char *_strchr(char *s, char c);
 
+/**
+ * _strspn - gets the length of a prefix
+ * substring.
+ * @s: string to search.
+ * @accept: string of characters to check.
+ *
+ * Return: string from character c.
+ */
+unsigned int _strspn(char *s, char *accept);
+
 #endif /* _MAIN_H_ */
