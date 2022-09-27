@@ -11,12 +11,14 @@
 int _putchar(char c);
 
 /**
- * _strlen - finds the length of a string
- * @s: pointer to character string
+ * print_diagsums - prints the sum of the
+ * diagonals of a matrix
+ * @a: matrix
+ * @size: size of matrix
  *
- * Return: value of length of string.
+ * Return: void.
  */
-int _strlen(char *s);
+void print_diagsums(int *a, int size);
 
 /**
  * _memset - fills memory with a constant byte
