@@ -102,4 +102,13 @@ void print_array(int *a, int n);
  */
 char *_strcpy(char *dest, char *src);
 
+/**
+ * _atoi (char *s);
+ * converts a string to an integer
+ * @s: string to convert
+ *
+ * Return: integer value.
+ */
+int _atoi(char *s);
+
 #endif /* _MAIN_H_ */
