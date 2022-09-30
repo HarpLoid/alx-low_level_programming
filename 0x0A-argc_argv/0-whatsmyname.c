@@ -3,8 +3,8 @@
 
 /**
  * main - prints it's name
- * @argc: size of argv[] 
- * @argv[]: array of terminal commands
+ * @argc: size of argv[]
+ * @argv: array of terminal commands
  *
  * Return: Always 0
  */
