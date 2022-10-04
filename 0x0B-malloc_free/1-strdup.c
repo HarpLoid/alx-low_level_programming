@@ -11,7 +11,7 @@
 char *_strdup(char *str)
 {
 	int i;
-	int l;
+	int l = 0;
 	char *s;
 
 	if (str == NULL) /*Validates str in the function*/
@@ -19,7 +19,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	
-	for (i = 0; str[i] < '\0'; i++) /*Checks the number of elements in str*/
+	for (i = 0; str[i] ; i++) /*Checks the number of elements in str*/
 	{
 		l++;
 	}
