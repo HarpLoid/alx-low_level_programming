@@ -10,11 +10,11 @@ int _strlen(char *s)
 {
 	int i, len = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; s[i] <= '\0'; i++)
 	{
 		len++;
 	}
-	
+
 	return (len);
 }
 
@@ -23,7 +23,7 @@ int _strlen(char *s)
  * to an allocated memory location.
  * @str: pointer to a string.
  *
- * Return: pointer to the location of 
+ * Return: pointer to the location of
  * the duplicate string, NULL on failure.
  */
 char *_strdup(char *str)
@@ -36,14 +36,18 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	
-	s = malloc(l * sizeof(char));
 
-	for (i = 0; i <= l; i++)
+	s = malloc(l * sizeof(char));
+	if (s == NULL)
+	{
+		return (NULL);
+	}
+
+	for (i = 0; i < l; i++)
 	{
 		s[i] = str[i];
 	}
-	
+
 	return (s);
 	free(s);
 }
