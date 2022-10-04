@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	
+
 	for (i = 0; str[i] ; i++) /*Checks the number of elements in str*/
 	{
 		l++;
@@ -26,7 +26,7 @@ char *_strdup(char *str)
 	l++;
 
 	s = malloc(l * sizeof(char));
-	
+
 	if (s == NULL)
 	{
 		return (NULL);
