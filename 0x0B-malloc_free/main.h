@@ -488,7 +488,15 @@ char *str_concat(char *s1, char *s2);
  */
 int **alloc_grid(int width, int height);
 
-
+/**
+ * free_grid - frees up allocated memory
+ * of a 2D array
+ * @grid: array to free up.
+ * @height: rows of the array.
+ *
+ * Return: void
+ */
+void free_grid(int **grid, int height):
 
 
 #endif /* _MAIN_H_ */
