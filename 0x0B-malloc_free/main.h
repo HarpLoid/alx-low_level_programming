@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+
 /**
  * _putchar - writes the character c to stdout
  * @c: The character to print
@@ -464,10 +465,28 @@ char *create_array(unsigned int size, char c);
  */
 char *_strdup(char *str);
 
+/**
+ * str_concat - concatenates two
+ * strings.
+ * @s1: string to add to.
+ * @s2: string to add to s1.
+ *
+ * Return: the memory address
+ * of concatenated string.
+ */
+char *str_concat(char *s1, char *s2);
 
-
-
-
+/**
+ * alloc_grid - allocates memory
+ * for a 2D array and initializes it to 0.
+ * @width: width of the grid.
+ * @height: height of grid.
+ *
+ * Return: null on failure and
+ * null if width or height 0 or less
+ * than 0.
+ */
+int **alloc_grid(int width, int height);
 
 
 
