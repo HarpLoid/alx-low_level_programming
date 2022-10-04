@@ -496,7 +496,7 @@ int **alloc_grid(int width, int height);
  *
  * Return: void
  */
-void free_grid(int **grid, int height):
+void free_grid(int **grid, int height);
 
 
 #endif /* _MAIN_H_ */
