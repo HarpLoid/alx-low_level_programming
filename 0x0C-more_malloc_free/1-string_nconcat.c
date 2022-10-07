@@ -28,7 +28,7 @@ int _strlen(char *s)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j, lens1, lens2;
+	int i, j, len, num = n;
 	char *s;
 
 	if (s1 == NULL)
@@ -39,32 +39,32 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		s2 = "";
 	}
-	lens1 = _strlen(s1);
-	lens2 = _strlen(s2);
-	s = malloc(lens1 + lens2);
+	if (num < 0)
+	{
+		return (NULL);
+	}
+	if (num >= _strlen(s2))
+	{
+		num = _strlen(s2);
+	}
+	
+	len = _strlen(s1) + num + 1;
+
+	s = malloc(sizeof(*s) * len);
 	if (s == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < lens1; i++)
+
+	for (i = 0; s1[i] != '\0'; i++)
 	{
 		s[i] = s1[i];
 	}
-	if (n >= lens2)
+	for (j = 0; j < num; j++)
 	{
-		for (j = 0; j < lens2; j++)
-		{
-			s[lens1 + j] = s2[j];
-		}
-		s[lens1 + j + 1] = '\0';
+		s[i + j] = s2[j];
 	}
-	else
-	{
-		for (j = 0; j < n; j++)
-		{
-			s[lens1 + j] = s2[j];
-		}
-		s[lens1 + j + 1] = '\0';
-	}
+	s[i + j] = '\0';
+	
 	return (s);
 }
