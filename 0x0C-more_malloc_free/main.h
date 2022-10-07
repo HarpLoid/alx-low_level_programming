@@ -460,7 +460,7 @@ char *create_array(unsigned int size, char c);
  * to an allocated memory location.
  * @str: pointer to a string.
  *
- * Return: pointer to the location of 
+ * Return: pointer to the location of
  * the duplicate string, NULL on failure.
  */
 char *_strdup(char *str);
@@ -503,12 +503,30 @@ void free_grid(int **grid, int height);
  * allocates memory using malloc
  * @b: size of memory to allocate
  *
- * Return: pointer to allocted memory 
+ * Return: pointer to allocted memory
  */
 void *malloc_checked(unsigned int b);
 
+/**
+ * string_nconcat - concatenates two strings
+ * @s1: first string.
+ * @s2: second string.
+ * @n: number of bytes to concatenate
+ * from s2.
+ *
+ * Return: concatenated string.
+ */
+char *string_nconcat(char *s1, char *s2, unsigned int n);
 
-
+/**
+ * _calloc - allocates memory and initialises
+ * it to zero.
+ * @nmemb: number of elements.
+ * @size: size of bytes to allocate.
+ * 
+ * Return: pointer to the memory.
+ */
+void *_calloc(unsigned int nmemb, unsigned int size);
 
 
 
