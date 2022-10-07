@@ -4,7 +4,7 @@
  * it to zero.
  * @nmemb: number of elements.
  * @size: size of bytes to allocate.
- * 
+ *
  * Return: pointer to the memory.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -14,9 +14,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unsigned char *c;
 
 	ptr = malloc(total);
-	if(ptr == NULL)
+	if (ptr == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 
 	c = ptr;
