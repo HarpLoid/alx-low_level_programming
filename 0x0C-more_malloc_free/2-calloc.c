@@ -9,7 +9,7 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int i, total = nmemb * size;
+	int total = nmemb * size;
 	void *ptr;
 	unsigned char *c;
 
