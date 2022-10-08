@@ -539,7 +539,15 @@ void *_calloc(unsigned int nmemb, unsigned int size);
  */
 int *array_range(int min, int max);
 
-
+/**
+ * _realloc - reallocates a memory block
+ * @ptr: pointer to old memory block
+ * @old_size: size of old memory block
+ * @new_size: size of reallocted memory
+ *
+ * Return: pointer to new memory block.
+ */
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
 
 #endif /* _MAIN_H_ */
