@@ -9,28 +9,23 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int total = nmemb * size;
 	void *ptr;
-	unsigned char *c;
+	unsigned int c;
 
 	if (nmemb <= 0 || size <= 0)
 	{
 		return (NULL);
 	}
 
-	ptr = malloc(total);
+	ptr = malloc(nmemb * size);
 	if (ptr == NULL)
 	{
 		return (NULL);
 	}
 
-	c = ptr;
-
-	while (total >= 0)
+	for (c = 0; c < nmemb * size; c++)
 	{
-		*c = 0;
-		c++;
-		total--;
+		*((char*)ptr + c) = 0;
 	}
 	return (ptr);
 }
