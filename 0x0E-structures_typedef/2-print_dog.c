@@ -5,7 +5,7 @@
 /**
  * print_dog - prints the values
  * elements of dog
- * @d: pointer to variable of 
+ * @d: pointer to variable of
  * type dog.
  *
  * Return: void
