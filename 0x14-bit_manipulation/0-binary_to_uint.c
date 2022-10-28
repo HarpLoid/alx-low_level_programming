@@ -58,7 +58,7 @@ unsigned int binary_to_uint(const char *b)
 
 	if (b == NULL)
 	{
-		return (res);
+		return (0);
 	}
 
 	for (i = (len - 1), n = 0; i >= 0; i--, n++)
