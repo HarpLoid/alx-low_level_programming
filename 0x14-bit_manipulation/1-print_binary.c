@@ -12,7 +12,7 @@ void print_binary(unsigned long int n)
 	unsigned long int n_dup = n, mask = 1;
 	int len = 0;
 
-	if (!n)
+	if (n == 0)
 	{
 		_putchar('0');
 		return;
@@ -37,6 +37,6 @@ void print_binary(unsigned long int n)
 		else
 			_putchar('0');
 
-		mask >>= 1
+		mask >>= 1;
 	}
 }
