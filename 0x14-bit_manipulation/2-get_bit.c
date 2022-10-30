@@ -12,16 +12,12 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int mask = 1, n_copy = n;
-	unsigned int len = 0;
+	unsigned long int mask = 1;
+	unsigned int max_len;
 
-	while (n_copy)
-	{
-		n_copy >>= 1;
-		len++;
-	}
+	max_len = (sizeof(unsigned long int) * 8);
 
-	if (index >= len)
+	if (index > max_len)
 	{
 		return (-1);
 	}
