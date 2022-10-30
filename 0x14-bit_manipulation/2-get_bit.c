@@ -12,8 +12,8 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int mask = 1, n_copy;
-	int len = 0;
+	unsigned long int mask = 1, n_copy = n;
+	unsigned int len = 0;
 
 	while (n_copy)
 	{
