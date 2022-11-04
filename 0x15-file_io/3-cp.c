@@ -32,7 +32,7 @@ int escape(int error, char *str, int fd)
 
 /**
  * main - a program that copies
- * the content of one file to 
+ * the content of one file to
  * another.
  * @ac: lenght of av
  * @av: array of commands
@@ -64,22 +64,14 @@ int main(int ac, char **av)
 	{
 		if (n_read < 0)
 			escape(98, av[1], 0);
-		
+
 		/*writes to file_to*/
 		n_wrote = write(fd_2, buffer, n_read);
 		if (n_wrote < 0)
 			escape(99, av[2], 0);
 	}
 
-	if (close(fd_2) == -1)
-		escape(100, NULL, fd_2);
-	else
-		close(fd_2);
-
-	if (close(fd_1) == -1)
-		escape(100, NULL, fd_1);
-	else
-		close(fd_1);
-
+	close(fd_2) == -1 ? (escape(100, NULL, fd_2)) :	close(fd_2);
+	close(fd_1) == -1 ? (escape(100, NULL, fd_1)) : close(fd_1);
 	return (0);
 }
