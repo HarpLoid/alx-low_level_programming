@@ -29,21 +29,19 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head,
 	newnode->next = NULL;
 
 	if (idx == 0)
-	{
 		return (add_dnodeint(head, n));
-	}
 
 	current = *head;
 	while ((idx != 0) && (current->next))
 	{
 		idx -= 1;
 		current = current->next;
-		if (idx == 1)
+		if (idx == 0)
 		{
-			newnode->prev = current;
-			current->next->prev = newnode;
-			newnode->next = current->next;
-			current->next = newnode;
+			newnode->next = current;
+			newnode->prev = current->prev;
+			current->prev->next = newnode;
+			current->prev = newnode;
 			break;
 		}
 	}
