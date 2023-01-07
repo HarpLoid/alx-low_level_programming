@@ -42,11 +42,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head,
 			newnode->prev = current->prev;
 			current->prev->next = newnode;
 			current->prev = newnode;
-			break;
+			return (newnode);
 		}
 	}
 	if (idx == 1)
 		return (add_dnodeint_end(head, n));
 
-	return (newnode);
+	return (NULL);
 }
