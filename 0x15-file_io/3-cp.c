@@ -48,8 +48,8 @@ int main(int ac, char **av)
 		}
 	} while (n_read != 0);
 
-	close(fd_2) == -1 ? (escape(100, NULL, fd_2)) :	close(fd_2);
-	close(fd_1) == -1 ? (escape(100, NULL, fd_1)) : close(fd_1);
+	close(fd_2) == -1 ? (error_handling(100, NULL, fd_2)) :	close(fd_2);
+	close(fd_1) == -1 ? (error_handling(100, NULL, fd_1)) : close(fd_1);
 	return (0);
 }
 /**
