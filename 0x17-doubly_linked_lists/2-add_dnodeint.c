@@ -8,7 +8,7 @@
  *
  * Return: address of the new element
  * or NULL if it failed
- */ 
+ */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
 	dlistint_t *node;
@@ -31,7 +31,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		node->next = NULL;
 		return (node);
 	}
-	
+
 	node->next = *head;
 	(*head)->prev = node;
 	*head = node;
