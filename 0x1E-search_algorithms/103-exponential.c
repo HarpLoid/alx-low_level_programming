@@ -12,10 +12,15 @@
 */
 int exponential_search(int *array, size_t size, int value)
 {
-	size_t i = 1, start, end, mid;
+	size_t i = 0, start, end, mid;
 
 	if (!array)
 		return (-1);
+
+	if (array[i] == value)
+		return (i);
+
+	i = 1;
 
 	while (array[i] < value && i < size)
 	{
@@ -49,13 +54,13 @@ int exponential_search(int *array, size_t size, int value)
 }
 
 /**
- * print_array - prints a given array.
- * @array: pointer to array
- * @start: beginning index to start from
- * @end: index to stop at
- *
- * Return: void
- */
+* print_array - prints a given array.
+* @array: pointer to array
+* @start: beginning index to start from
+* @end: index to stop at
+*
+* Return: void
+*/
 void print_array(int *array, int start, int end)
 {
 	int i;
